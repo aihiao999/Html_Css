@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<!--
+		框架结构标签<frameset></frameset>定义如何将窗口分割为框架。
+			cols: 按列划分页面, 每列占据屏幕的面积
+			rows: 按行划分页面, 每行占据屏幕的面积
+			
+		注意: 使用了frameset必须将body删掉, 否则页面会有问题。
+	-->
+	<!--
+		Frame 框架标签
+			src属性定义了放置在每个框架中的html文档。
+	-->
+	<frameset rows="15%,*">
+		<frame src="top.html" />
+		<frameset cols="15%,*">
+			<frame src="left.html" />
+			<frame src="right.html" name="rightFrame" />
+		</frameset>
+	</frameset>
+</html>
